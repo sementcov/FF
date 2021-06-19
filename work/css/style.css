@@ -3,6 +3,7 @@ body {
     font-family: 'Baloo Tammudu 2';
     font-size: 16px;
     color: black;
+    min-width: 320px;
 }
 
 *,
@@ -23,7 +24,7 @@ h3 {
 }
 
 p {
-    font-size: 30px;
+    font-size: 20px;
     letter-spacing: 5px;
     margin: 0 auto 25px auto;
 }
@@ -34,7 +35,7 @@ p {
     width: 100%;
     max-width: 8000in;
     margin: 0 auto;
-    margin-bottom: 125px;
+    margin-bottom: 60px;
 }
 
 
@@ -94,13 +95,13 @@ p {
 
 /* ------------------------- nav ------------------------- */
 .nav__left {
-    margin-right: 17%;
+    margin-right: 10%;
     font-size: 16px;
     text-transform: uppercase;
 }
 
 .nav__right {
-    margin-left: 17%;
+    margin-left: 10%;
     font-size: 16px;
     text-transform: uppercase;
 }
@@ -164,7 +165,15 @@ p {
 
 /* ------------------------- section ------------------------- */
 .section {
-    padding: 80px 0;
+    padding: 60px 0;
+}
+
+.seсtion--map {
+    margin-bottom: 40px;
+    padding-bottom: 0;
+    background: url("../images/map/bg.jpg") center no-repeat;
+    -webkit-background-size:cover;
+    background-size: cover;
 }
 
 .section--investor {
@@ -175,9 +184,9 @@ p {
     padding: 0;
 }
 
-.setion__header {
+.section__header {
     width: 100%;
-    max-width: 950px;
+    max-width: 1300px;
     margin: 0 auto 40px;
     text-align: center;
 }
@@ -243,9 +252,9 @@ p {
 
 .example__text {
     width: 100%;
+    font-family: 'Comfortaa', cursive;
     color: black;
     text-transform: uppercase;
-    font-weight: 700;
     font-size: 18px;
     opacity: 0;
     position: absolute;
@@ -290,6 +299,18 @@ p {
 .tab__text {
     font-size: 18px;
     text-transform: uppercase;
+}
+
+
+/* ------------------------- investor ------------------------- */
+.map {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.map_item {
+    display: block;
 }
 
 
@@ -381,3 +402,46 @@ p {
     color: black;
     text-align: center;
 }
+
+
+
+@media screen and (max-width: 960px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 800px) {
+    p {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .header__logo {
+        font-size: 22px;
+    }
+
+    .investot__item {
+        width: 100%;
+    }
+
+    .section__header {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .example {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .example__forest {
+        margin: 20px auto;
+    }
+}
+
