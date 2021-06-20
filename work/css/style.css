@@ -109,7 +109,7 @@ p {
 .nav__link {
     display: inline-block;
     vertical-align: top;
-    margin: 0 65px;
+    margin: 0 60px;
     position: relative;
     color: black;
     text-decoration: none;
@@ -277,16 +277,32 @@ p {
     margin: 0 300px;
 }
 
-.tab__item {
-    flex: 1 1 0;
+.tab__item__1 {
+    flex: 1 1 1;
     padding: 70px 25px;
     border-left: 1px solid black;
+    border-right: 1px solid black;
     text-align: center;
     color: black;
+    width: 100%;
 }
 
-.tab__item:last-child {
+.tab__item__2 {
+    flex: 1 1 1;
+    padding: 70px 25px;
+    text-align: center;
+    color: black;
+    width: 100%;
+}
+
+.tab__item__3 {
+    flex: 1 1 1;
+    padding: 70px 25px;
+    border-left: 1px solid black;
     border-right: 1px solid black;
+    text-align: center;
+    color: black;
+    width: 100%;
 }
 
 .tab__countries {
@@ -302,7 +318,7 @@ p {
 }
 
 
-/* ------------------------- investor ------------------------- */
+/* ------------------------- map ------------------------- */
 .map {
     width: 100%;
     max-width: 1000px;
@@ -310,7 +326,8 @@ p {
 }
 
 .map_item {
-    display: block;
+    display: flex;
+    width: 100%;
 }
 
 
@@ -318,7 +335,7 @@ p {
 .investor {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 65px;
+    margin: 0 9%;
 }
 
 .investot__item {
@@ -406,10 +423,68 @@ p {
 
 
 @media screen and (max-width: 960px) {
-    body {
+    .tab {
+        margin: 0 auto;
+    }
+
+    .tab__item__1 {
+        flex: 1 1 1;
+        padding: 70px 25px;
+        border-left: 0px solid black;
+        border-right: 0px solid black;
+        border-bottom: 1px solid black;
+        text-align: center;
+        color: black;
+        width: 100%;
+    }
+
+    .tab__item__2 {
+        flex: 1 1 1;
+        padding: 70px 25px;
+        border-left: 0px solid black;
+        border-right: 0px solid black;
+        border-bottom: 1px solid black;
+        text-align: center;
+        color: black;
+        width: 100%;
+    }
+
+    .tab__item__3 {
+        flex: 1 1 1;
+        padding: 70px 25px;
+        border-left: 0px solid black;
+        border-right: 0px solid black;
+        text-align: center;
+        color: black;
+        width: 100%;
+    }
+    .example {
         display: flex;
         flex-direction: column;
-        align-items: center;
+    }
+
+    .example__forest {
+        margin: 20px auto;
+    }
+
+    .example {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .example__forest {
+        margin: 20px auto;
+    }
+
+    .tab {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav__link {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
     }
 }
 @media screen and (max-width: 800px) {
@@ -432,16 +507,18 @@ p {
     .section__header {
         max-width: 900px;
     }
+
+    .example {
+        width: 100%;
+    }
+
+    .tab {
+        width: 100%;
+    }
+    
 }
 
 @media screen and (max-width: 650px) {
-    .example {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .example__forest {
-        margin: 20px auto;
-    }
+    
 }
 
